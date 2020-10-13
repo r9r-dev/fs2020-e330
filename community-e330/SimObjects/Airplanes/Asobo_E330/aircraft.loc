@@ -1,0 +1,148 @@
+{
+  "LocalisationFile": {
+    "Version": 2,
+    "UUID": "92f50471-fe98-47c2-aa21-10a9171c4abb",
+    "Languages": [
+      "en-US",
+      "fr-FR",
+      "es-ES",
+      "de-DE",
+      "it-IT",
+      "pl-PL",
+      "pt-BR",
+      "ru-RU"
+    ],
+    "Strings": {
+      "AIRCRAFT.DESCRIPTION": {
+        "UUID": "6dad0d76-1dd2-401d-9dc8-bb39e56f9cf1",
+        "LastModifiedBy": "dmedina",
+        "LastModifiedDate": "2020-07-01 11:55:27",
+        "LocalizationStatus": "TranslationNeeded",
+        "Languages": {
+          "en-US": {
+            "Text": "In 1980, Extra Aircraft (originally known as Extra Flugzeugbau) opened shop in Germany, a one-man operation with one goal in mind: aerobatic excellence. Starting with the EXTRA 230, this dedication to high-performance, competition-worthy monoplanes inspired innovation and experimentation that culminates in the EXTRA 330LT.</br></br>Introduced 30 years after the company's first wood-based model, the EXTRA 330LT features carbon-fiber composite construction, aerodynamically-optimized low-wing design (hence the \"L\" in its designation), and a beefy 315-hp Lycoming powerplant -- all of which combines to make this the fastest production-certified, naturally-aspirated, piston plane in the world.</br></br>But there's more to this aircraft than just speed. With the 330LT, Extra has blended full aerobatic capabilities with outstanding cruise performance, creating an entirely new category: \"The Aerobatic Tourer\" (hence the \"T\" in its designation).</br></br>Controls are powerful, but progressive, making the 330LT easy to fly smoothly, yet crisp and responsive enough for ultimate maneuverability. Whether you're rolling and spinning and diving at an airshow, or simply looking to travel in style, this Extra Aircraft is how you do it right: \"Masterfully blending performance and economy with the pure joy of flying.\"",
+            "LocalizationStatus": "TranslationNeeded"
+          },
+          "fr-FR": {
+            "Text": "En 1980, Extra Aircraft (dont le nom originel est Extra Flugzeugbau) a ouvert un magasin en Allemagne, tenu par une seule personne et avec un seul objectif en tête : l'excellence dans la voltige. Le premier avion était l'EXTRA 230, cette passion pour les monoplans hautes performances de compétition a insufflé innovation et expérimentation qui culminent dans l'EXTRA 330LT.</br></br>Mis sur le marché 30 ans après le premier modèle de l'entreprise en bois, l'EXTRA 330LT comporte une structure composite en fibre de carbone, des ailes basses à aérodynamique optimisée (d'où le « L » de son nom, pour « low-wing »), et un groupe motopropulseur Lycoming imposant de 315 ch -- tous ces éléments combinés en font l'avion à piston et aspiration naturelle certifié pour la production le plus rapide au monde.</br></br>Mais cet avion n'est pas que puissance. Avec le 330LT, Extra a combiné fonctionnalités de voltige et excellentes performances de croisière, donnant naissance à une nouvelle catégorie : le « guide touristique de voltige » (« Aerobatic Tourer » d'où le « T » de son nom).</br></br>Les commandes sont puissantes mais progressives, faisant du 330LT un avion facile à piloter avec fluidité mais aussi précis et réactif pour une manœuvrabilité sans précédent. Que vous enchaîniez virages, vrilles et piqués à un salon aéronautique, ou que vous souhaitiez juste voyager avec classe, cet avion Extra est ce qu'il vous faut : « il mêle parfaitement les performances et l'économie avec les meilleures sensations de vol »."
+          },
+          "es-ES": {
+            "Text": "En 1980, Extra Aircraft (originalmente conocido como Extra Flugzeugbau) abrió una tienda en Alemania con un único empleado y un objetivo en mente: la excelencia acrobática. Comenzando con el EXTRA 230, esta dedicación a los monoplanos de alto rendimiento y listos para la competición inspiró la innovación y la experimentación que culminó en el EXTRA 330LT.</br></br>Presentado 30 años después del primer modelo de madera de la compañía, el EXTRA 330LT posee una construcción compuesta de fibra de carbono, un diseño de ala baja optimizado aerodinámicamente (de ahí la L de su designación) y una robusta unidad de potencia Lycoming de 315 CV. Estas características están combinadas para hacer de este el avión de pistones de aspiración natural más veloz y con la producción certificada más rápida del mundo.</br></br>No obstante, esta aeronave no es solo velocidad. Con el 330LT, Extra ha combinado todas las capacidades acrobáticas con un rendimiento de crucero excepcional creando una categoría completamente nueva: el turismo acrobático (de ahí la T de su designación).</br></br>Sus mandos son potentes y progresivos, lo que hace que el 330LT sea fácil y suave de pilotar, pero también lo suficientemente sensible para una mejor maniobrabilidad. Si quieres realizar giros, toneles y picadas en un espectáculo aéreo o simplemente viajar con estilo, esta aeronave es la mejor forma de hacerlo: combina magistralmente rendimiento y ahorro con el puro placer de volar."
+          },
+          "de-DE": {
+            "Text": "1980 eröffnete das (ursprünglich als Extra Flugzeugbau bekannte) Unternehmen Extra Aircraft eine Zweigstelle in Deutschland, ein Ein-Mann-Unternehmen mit einem einzigen Ziel: kunstfliegerische Exzellenz. Mit der EXTRA 230 beginnend führte diese Hingabe zu wettbewerbsfähigen Hochleistungseindeckern zum Experimentieren und allerlei Innovationen, die letztendlich die EXTRA 330LT hervorbrachten.</br></br>30 Jahre nach der Fertigung des ersten Holzmodells des Unternehmens kam die EXTRA 330LT mit einer auf Carbon basierten Kompositkonstruktion, einem aerodynamisch-optimierten Tiefdecker-Design (der Buchstabe „L“ steht für „low-wing design“) und einem bullenstarken 315-PS-Triebwerk des Typs Lycoming daher. All diese Eigenschaften miteinander kombiniert machen die EXTRA 330LT zum schnellsten (mit zertifizierter Produktion) selbstsaugenden Kolbenflugzeug der Welt.</br></br>Allerdings bietet dieses Flugzeug mehr als nur bloße Geschwindigkeit. Die 330LT vereinigt in sich das gesamte Spektrum kunstfliegerischer Möglichkeiten mit einer ausgezeichneten Reiseleistung, wodurch eine völlig neue Kategorie entsteht: der „Kunstflug-Tourer“ (daher das „T“ im Namen).</br></br>Die Steuerung ist ebenso mächtig wie fortschrittlich, wodurch die 330LT sanft zu fliegen und dennoch knackig und zugänglich genug ist, um die ultimative Manövrierbarkeit zu bieten. Egal, ob Sie rollen und trudeln oder bei einer Flugshow in den Sturzflug gehen – oder einfach nur stylish reisen wollen. Mit der Extra Aircraft machen Sie es immer richtig: „Eine meisterhafte Mischung aus Leistung, Sparsamkeit und der puren Lust am Fliegen.“"
+          },
+          "it-IT": {
+            "Text": "Nel 1980, Extra Aircraft (originariamente noto come Extra Flugzeugbau) inaugura un negozio in Germania, un'operazione indipendente con un unico obiettivo: l'eccellenza acrobatica. A partire dall'EXTRA 230, la dedizione per monoplani competitivi ad alte prestazioni ispira l'innovazione e la sperimentazione, che culminano nell'EXTRA 330LT.</br></br>Presentato 30 anni dopo il lancio del primo modello in legno dell'azienda, l'EXTRA 330LT presenta una struttura composita in fibra di carbonio, un design ad ala bassa con aerodinamica ottimizzata (da qui deriva la \"L\", di \"low\", presente nel nome) e un potente propulsore Lycoming da 315 CV, una combinazione che rende questo esemplare l'aeromobile con motore a pistoni ad aspirazione naturale certificato più veloce del mondo.</br></br>Ma questo aeromobile nasconde più della velocità. Extra unisce nel 330LT capacità acrobatiche a eccellenti prestazioni di crociera, dando vita a una categoria completamente nuova: \"Aerobatic Tourer\" (da cui deriva la \"T\" nel nome).</br></br>I comandi sono potenti, ma avanzati, rendendo il 330LT semplice da manovrare e sufficientemente reattivo. Che tu voglia esibirti in virate, volteggi o planate durante un airshow o semplicemente volare con stile, questo aeromobile Extra Aircraft è la soluzione perfetta: \"Unisce in modo magistrale prestazioni, risparmio e la pura gioia del volo.\""
+          },
+          "pl-PL": {
+            "Text": "W 1980 roku firma Extra Aircraft (znana wcześniej pod nazwą Extra Flugzeugbau) otworzyła w Niemczech swój warsztat. Było to jednoosobowe przedsięwzięcie zorganizowane w celu osiągnięcia akrobacyjnego ideału. Ciężka praca nad wydajnymi i konkurencyjnymi jednopłatami rozpoczęła się od opracowania modelu EXTRA 230, a zakończyła na modelu EXTRA 330LT.</br></br>Model EXTRA 330LT, wprowadzony na rynek 30 lat po pierwszym, drewnianym samolocie opracowanym przez firmę, jest wykonanym z materiałów kompozytowych wzmocnionych włóknem węglowym dolnopłatem z profilem skrzydła zoptymalizowanym pod kątem aerodynamiki. Napędzany jest potężnym silnikiem marki Lycoming o mocy 315 koni mechanicznych, który czyni go najszybszym dopuszczonym do produkcji seryjnej samolotem z wolnossącym silnikiem tłokowym na świecie.</br></br>Jednak prędkość to niejedyna zaleta tego modelu. 330LT łączy swoje możliwości akrobacyjne z imponującymi osiągami rejsowymi, tworząc zupełnie nową klasę „akrobatycznego rejsowca”.</br></br>Sterowanie jest solidne i nowoczesne, dzięki czemu lot modelem 330LT to płynne i ekscytujące doświadczenie, a sama maszyna jest przy tym precyzyjna i zwrotna. Samolot ten może równie dobrze nurkować, wykonywać beczki i korkociągi, jak i zapewnić spokojną podróż w dobrym stylu. Bądź co bądź motto firmy Extra Aircraft brzmi: „Mistrzowskie połączenie wydajności i oszczędności z czystą radością latania”."
+          },
+          "pt-BR": {
+            "Text": "Em 1980, a Extra Aircraft (originalmente conhecida como Extra Flugzeugbau) abriu sua fábrica na Alemanha, uma operação de um único homem com um objetivo em mente: excelência em acrobacias. Começando pelo EXTRA 230, essa dedicação a monoplanos de alto desempenho e dedicados a competições inspirou a inovação e experimentação que culminam no EXTRA 330LT.</br></br>Apresentado 30 anos após o primeiro modelo baseado em madeira da empresa, o EXTRA 330LT possui construção composta por fibra de carbono, design de asa baixa otimizado aerodinamicamente (por isso o L em seu nome) e um poderoso motopropulsor Lycoming de 315 hp – tudo isso combinado para fazer desse o avião de pistão naturalmente aspirado e de produção certificada mais rápido do mundo.</br></br>Mas há mais nessa aeronave do que simplesmente sua velocidade. Com o 330LT, a Extra mesclou recursos completos para acrobacias com desempenho de cruzeiro excelente, criando uma categoria totalmente nova: \"The Aerobatic Tourer\" (o Esportivo Acrobático, por isso o \"T\" em seu nome).</br></br>Os controles são poderosos, mas progressivos, tornando o 330LT fácil de voar suavemente, ainda que responsivo o suficiente para a capacidade perfeita de manobras. Esteja você fazendo acrobacias em um show aéreo ou simplesmente procurando viajar com estilo, a Extra Aircraft é a melhor forma de fazê-lo: \"Mesclando com maestria desempenho e economia com o puro contentamento de voar\"."
+          },
+          "ru-RU": {
+            "Text": "В 1980 году немецкий пилот-спортсмен Вальтер Экстра открыл мастерскую Extra Flugzeugbau, позже переименованную в Extra Aircraft. Он хотел создавать лучшие самолёты для аэробатики. Первым его серийным самолётом стал EXTRA 230. Вальтер всегда мечтал создавать мощные монопланы, экспериментировать с конструкцией и системами, а также ориентировать свои шедевры на участие в соревнованиях. EXTRA 330LT идеально вписывается в эту концепцию.</br></br>EXTRA 330LT, представленный спустя 30 лет после первенца Вальтера, отличается от предшественников: его структура изготовлена из углеродного волокна, низкое расположение крыла позволяет добиться идеальной аэродинамики (поэтому у модели индекс L в названии), а мощный мотор от Lycoming выдаёт 315 лошадиных сил. Благодаря всему этому 330LT можно смело назвать самым скоростным серийным поршневым самолётом без турбонаддува.</br></br>Однако этот самолёт может похвастаться не только скоростью. Модель 330LT остаётся выдающимся спортивным самолётом для аэробатики, но при этом подходит и для обычных полётов. Фактически это первый самолёт в классе Aerobatic Tourer (поэтому у модели индекс T в названии).</br></br>Органы управления 330LT очень отзывчивые. В воздухе самолёт послушен и предсказуем, при этом быстро реагирует на действия пилота и легко выполняет любые манёвры. Неважно, любите ли вы крутить фигуры высшего пилотажа на авиашоу или предпочитаете спокойные полёты на красивых самолётах, — Extra подойдёт для ваших задач. Превосходные характеристики в нём сочетаются с экономичностью и дарят удовольствие от полёта."
+          }
+        }
+      },
+      "AIRCRAFT.UI_MANUFACTURER": {
+        "UUID": "1f85a89f-5ceb-43df-b65c-7b3062bc602a",
+        "LastModifiedBy": "ajimeno",
+        "LastModifiedDate": "2020-03-18 12:01:33",
+        "LocalizationStatus": "TranslationNeeded",
+        "Languages": {
+          "en-US": {
+            "Text": "Extra",
+            "LocalizationStatus": "TranslationNeeded"
+          },
+          "fr-FR": {
+            "Text": "Extra"
+          },
+          "es-ES": {
+            "Text": "Extra"
+          },
+          "de-DE": {
+            "Text": "Extra"
+          },
+          "it-IT": {
+            "Text": "Extra"
+          },
+          "pl-PL": {
+            "Text": "Extra"
+          },
+          "pt-BR": {
+            "Text": "Extra"
+          },
+          "ru-RU": {
+            "Text": "Extra"
+          }
+        }
+      },
+      "AIRCRAFT.UI_MODEL": {
+        "UUID": "1c876fce-3752-4963-84b2-916f0f125458",
+        "LastModifiedBy": "ajimeno",
+        "LastModifiedDate": "2020-03-27 08:04:48",
+        "LocalizationStatus": "TranslationNeeded",
+        "Languages": {
+          "en-US": {
+            "Text": "EXTRA 330LT",
+            "LocalizationStatus": "TranslationNeeded"
+          },
+          "fr-FR": {
+            "Text": "EXTRA 330LT"
+          },
+          "es-ES": {
+            "Text": "EXTRA 330LT"
+          },
+          "de-DE": {
+            "Text": "EXTRA 330LT"
+          },
+          "it-IT": {
+            "Text": "EXTRA 330LT"
+          },
+          "pl-PL": {
+            "Text": "EXTRA 330LT"
+          },
+          "pt-BR": {
+            "Text": "EXTRA 330LT"
+          },
+          "ru-RU": {
+            "Text": "EXTRA 330LT"
+          }
+        }
+      },
+      "AIRCRAFT.UI_VARIATION": {
+        "UUID": "84825e25-2b0a-46ec-8756-286cb0f83342",
+        "LastModifiedBy": "ajimeno",
+        "LastModifiedDate": "2020-03-08 15:45:14",
+        "Languages": {
+          "en-US": {
+            "Text": "White"
+          },
+          "fr-FR": {
+            "Text": "Blanc"
+          },
+          "es-ES": {
+            "Text": "Blanco"
+          },
+          "de-DE": {
+            "Text": "Weiß"
+          },
+          "it-IT": {
+            "Text": "Bianco"
+          },
+          "pl-PL": {
+            "Text": "Biały"
+          },
+          "pt-BR": {
+            "Text": "White"
+          },
+          "ru-RU": {
+            "Text": "White"
+          }
+        }
+      }
+    }
+  }
+}
