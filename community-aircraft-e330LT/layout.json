@@ -1,0 +1,39 @@
+{
+  "content": [
+    {
+      "path": "SimObjects/Airplanes/Asobo_E330/cockpit.cfg",
+      "size": 4928,
+      "date": 132470805612346261
+    },
+    {
+      "path": "SimObjects/Airplanes/Asobo_E330/engines.cfg",
+      "size": 9621,
+      "date": 132470847543603816
+    },
+    {
+      "path": "SimObjects/Airplanes/Asobo_E330/flight_model.cfg",
+      "size": 15329,
+      "date": 132470897197650948
+    },
+    {
+      "path": "SimObjects/Airplanes/Asobo_E330/systems.cfg",
+      "size": 7631,
+      "date": 132470853991766874
+    },
+    {
+      "path": "SimObjects/Airplanes/Asobo_E330/model/E330_interior.xml",
+      "size": 12552,
+      "date": 132458664658386492
+    },
+    {
+      "path": "SimObjects/Airplanes/Asobo_E330/panel/panel.cfg",
+      "size": 1429,
+      "date": 132447610781551036
+    },
+    {
+      "path": "SimObjects/Airplanes/Asobo_E330/panel/panel.xml",
+      "size": 16508,
+      "date": 132470766758143161
+    }
+  ]
+}

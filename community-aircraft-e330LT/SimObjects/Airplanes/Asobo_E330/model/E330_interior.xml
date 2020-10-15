@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModelInfo>
+	<LODS>
+		<!-- Highest LOD -->
+		<!-- minimum display size in % (should be bounding sphere vertical screen size, sphere will often be slightly larger than you expect) -->
+		<!-- default minSize is 0 -->
+		<LOD minSize="100" ModelFile="E330_interior_lod00.gltf"/>
+		<LOD minSize="10" ModelFile="E330_interior_lod01.gltf"/>
+		<LOD minSize="5" ModelFile="E330_interior_lod02.gltf"/>
+		<LOD minSize="4" ModelFile="E330_interior_lod03.gltf"/>
+		<LOD minSize="1" ModelFile="E330_interior_lod04.gltf"/>
+	</LODS>
+	<Behaviors>
+		<Include ModelBehaviorFile="Asobo\Common.xml"/>
+		<Include ModelBehaviorFile="Asobo\GPS\AS430.xml"/>
+		<Include ModelBehaviorFile="Asobo\Transponder\AS330.xml"/>
+		<Include ModelBehaviorFile="Asobo\Misc\Clock.xml"/>
+		<Include ModelBehaviorFile="Asobo\NAVCOM\NavComSystem.xml"/>
+		<Include ModelBehaviorFile="Asobo\GlassCockpit\AS3X.xml"/>
+		
+		<!-- INSTRUMENTS ###################################-->
+		<Component ID="INSTRUMENTS">
+			<UseTemplate Name="ASOBO_INSTRUMENT_Dial_Compass_Template">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_INSTRUMENT_Clock_Template">
+				<USE_BACKLIGHTING>True</USE_BACKLIGHTING>
+				<SCREEN_NODE_ID>Clock_Screen_1</SCREEN_NODE_ID><!-- Need a correct node -->
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_INSTRUMENT_Accelerometer_Template">
+				<ANIM_LAG_NEEDLE>100</ANIM_LAG_NEEDLE>
+				<USE_WARNING_INDICATOR>True</USE_WARNING_INDICATOR>
+				<WARNING_MIN_VALUE>-9.5</WARNING_MIN_VALUE>
+				<WARNING_MAX_VALUE>9.5</WARNING_MAX_VALUE>
+				<WARNING_NODE_ID>GForcelWarning</WARNING_NODE_ID>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_INSTRUMENT_Needle_Airspeed_Template">
+				<MIN_VALUE>0</MIN_VALUE>
+				<MAX_VALUE>260</MAX_VALUE>
+				<ID>1</ID>
+				<DONT_APPEND_ID>True</DONT_APPEND_ID>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_INSTRUMENT_Needle_Airspeed_Template">
+				<MIN_VALUE>0</MIN_VALUE>
+				<MAX_VALUE>260</MAX_VALUE>
+				<ANIM_NAME>INSTRUMENT_Needle_Airspeed</ANIM_NAME>
+				<NODE_ID>INSTRUMENT_Needle_Airspeed_2</NODE_ID>
+				<ID>2</ID>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_INSTRUMENT_Needle_Turn_Template">
+				<NO_NEEDLE/>
+				<NO_WARNING/>
+				<BALL_NODE_ID>INSTRUMENT_TurnCoordinator_Ball</BALL_NODE_ID>
+				<BALL_ANIM_NAME>INSTRUMENT_TurnCoordinator_Ball</BALL_ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_INSTRUMENT_Altimeter_Template">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_INSTRUMENT_Altimeter_Template">
+				<ID>2</ID>
+			</UseTemplate>
+		</Component>
+		
+		<!-- ENGINE ########################### -->
+		<Component ID="ENGINE">
+			<UseTemplate Name="ASOBO_ENGINE_Lever_Throttle_Template">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_ENGINE_Lever_Propeller_Template">
+				<USE_BUTTON/>
+			</UseTemplate>
+			<CameraTitle>InstrumentsLeft</CameraTitle>
+		</Component>
+		
+		<!-- FUEL ########################### -->
+		<Component ID="FUEL">
+			<UseTemplate Name="ASOBO_FUEL_Lever_Mixture_Template">
+				<USE_BUTTON/>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_FUEL_Switch_Pump_Template">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_FUEL_Knob_Selector_Template">
+				<ANIM_NAME>FUEL_Switch_Selector_1</ANIM_NAME>
+				<NODE_ID>FUEL_Switch_Selector_1</NODE_ID>
+				<FUEL_TANK_SELECTOR_POS_16>2</FUEL_TANK_SELECTOR_POS_16> <!-- BOTH -->
+				<FUEL_TANK_SELECTOR_POS_6>1</FUEL_TANK_SELECTOR_POS_6> <!-- CENTER -->
+				<FUEL_TANK_SELECTOR_POS_OFF>0</FUEL_TANK_SELECTOR_POS_OFF>
+				<FUEL_SEL_ENUM_VAL_0>0</FUEL_SEL_ENUM_VAL_0> <!-- FUEL_SELECT: BOTH  -->
+				<FUEL_SEL_ENUM_VAL_1>6</FUEL_SEL_ENUM_VAL_1> <!-- FUEL_SELECT: CENTER -->
+				<FUEL_SEL_ENUM_VAL_2>16</FUEL_SEL_ENUM_VAL_2> <!-- FUEL_SELECT: OFF -->
+				<DEFAULT_POS>2</DEFAULT_POS>
+				<NUM_STATES>3</NUM_STATES>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_FUEL_Update_Ensure_Fuel_Valve_Open">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_PASSENGER_Switch_Cabin_Heat_Template">
+				<USE_DRAGGING_INTERACTION/>
+				<ID>1</ID>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_PASSENGER_Switch_Cabin_Heat_Template">
+				<NODE_ID>PASSENGER_Switch_Cabin_Heat_Selector</NODE_ID>
+				<ANIM_NAME>PASSENGER_Switch_Cabin_Heat_Selector</ANIM_NAME>
+				<USE_DRAGGING_INTERACTION/>
+				<ID>2</ID>
+			</UseTemplate>
+			<CameraTitle>InstrumentsTop</CameraTitle>
+		</Component>
+		
+		<!-- ELECTRICAL ###################################-->
+		<Component ID="ELECTRICAL">
+			<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Battery_Master_Template">
+				<NODE_ID>ELECTRICAL_Switch_Battery_Master</NODE_ID>
+				<ANIM_NAME>ELECTRICAL_Switch_Battery_Master</ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Alternator_Template">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Magneto_Template">
+				<SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+				<INDEX_OFF>0</INDEX_OFF>
+				<INDEX_RIGHT>1</INDEX_RIGHT>
+				<INDEX_LEFT>2</INDEX_LEFT>
+				<INDEX_BOTH>3</INDEX_BOTH>
+				<ARROW_TYPE>Curved</ARROW_TYPE>
+				<USE_STARTER/>
+				<STATE_MAX_TIMER>5</STATE_MAX_TIMER>
+				<ANIM_NAME>ELECTRICAL_Switch_Magneto</ANIM_NAME>
+				<NODE_ID>ELECTRICAL_Switch_Magneto</NODE_ID>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_ELECTRICAL_Switch_Avionics_Bus_Template">
+				<AVIONICS_BUS_ID>2</AVIONICS_BUS_ID>
+				<SOURCE_BUS_ID>1</SOURCE_BUS_ID>
+				<AVIONICS_CIRCUIT_ID>38</AVIONICS_CIRCUIT_ID>
+				<ANIMTIP_0>TT:COCKPIT.TOOLTIPS.AVIONICS_MASTER_SWITCH_OFF</ANIMTIP_0>
+				<ANIMTIP_1>TT:COCKPIT.TOOLTIPS.AVIONICS_MASTER_SWITCH_ON</ANIMTIP_1>
+			</UseTemplate>
+			<CameraTitle>InstrumentsTop</CameraTitle>
+		</Component>
+		
+		<!-- HANDLING (YOKES) ########################### -->
+		<Component ID="YOKES">
+			<UseTemplate Name="ASOBO_HANDLING_Yoke_Hideable_Template">
+				<TOOLTIPID>TT:COCKPIT.TOOLTIPS.YOKE_VISIBILITY</TOOLTIPID>
+				<YOKE_HIDER_NODE_ID>x_HANDLING_Yoke_Hider_1</YOKE_HIDER_NODE_ID>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Yoke_Hider_Template">
+				<NODE_ID>HANDLING_Yoke_Hider_1_Add</NODE_ID>
+				<ID>1</ID>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Yoke_Hideable_Template">
+				<TOOLTIPID>TT:COCKPIT.TOOLTIPS.YOKE_VISIBILITY</TOOLTIPID>
+				<NODE_ID>HANDLING_Yoke_2</NODE_ID>
+				<ONLY_HIDEABLE/>
+				<ID>2</ID>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Switch_ElevatorTrim_Template">
+				<NODE_ID>HANDLING_YOKE_Switch_ElevatorTrim</NODE_ID>
+				<ANIM_NAME>HANDLING_YOKE_Switch_ElevatorTrim</ANIM_NAME>
+				<MOMENTARY_MIN_DURATION>0.1</MOMENTARY_MIN_DURATION>
+				<TRIM_LIMIT>15</TRIM_LIMIT>
+			</UseTemplate>
+		</Component>
+		<Component ID="HANDLING">
+			<UseTemplate Name="ASOBO_HANDLING_RudderPedals_Template">
+				<RUDDERPEDALS_TYPE>MERGED</RUDDERPEDALS_TYPE>
+				<DIFFERENTIATE_BRAKE_ANIM_L_R>True</DIFFERENTIATE_BRAKE_ANIM_L_R>
+				<USE_BRAKE/>
+				<NODE_ID>HANDLING_RudderPedals_1</NODE_ID><!-- any valid node -->
+				<NODE_ID_L_BRAKE>HANDLING_RudderPedals_1_Brake</NODE_ID_L_BRAKE>
+				<NODE_ID_L_RUDDER>HANDLING_RudderPedals_1</NODE_ID_L_RUDDER>
+				<NODE_ID_R_BRAKE>HANDLING_RudderPedals_2_Brake</NODE_ID_R_BRAKE>
+				<NODE_ID_R_RUDDER>HANDLING_RudderPedals_2</NODE_ID_R_RUDDER>
+			</UseTemplate>
+		</Component>
+		
+		<!-- LIGHTING ###################################-->
+		<Component ID="LIGHTING">
+			<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Strobe_Template">
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Navigation_Template">
+			</UseTemplate>
+			<CameraTitle>InstrumentsTop</CameraTitle>
+		</Component>
+		
+		<!-- GLASS COCKPIT ###################################-->
+		<Component ID="GLASS_COCKPIT">
+			<Component ID="AS3X_Touch" Node="AS3X_Screen_1">
+				<UseTemplate Name="ASOBO_GT_Emissive_Gauge">
+					<EMISSIVE_CODE>1</EMISSIVE_CODE>
+				</UseTemplate>
+			</Component>
+			<Component ID="Trim_Screen" Node="Trim_Screen">
+				<UseTemplate Name="ASOBO_GT_Emissive_Gauge">
+					<EMISSIVE_CODE>1</EMISSIVE_CODE>
+				</UseTemplate>
+			</Component>
+			<Component ID="ENGINE_MONITOR_Screen" Node="ENGINE_MONITOR_Screen_1">
+				<UseTemplate Name="ASOBO_GT_Emissive_Gauge">
+					<EMISSIVE_CODE>1</EMISSIVE_CODE>
+				</UseTemplate>
+			</Component>
+		</Component>
+		<Component ID="AS3X">
+			<UseTemplate Name="ASOBO_AS3X_Template">
+				<HTML_PREFIX>AS3X_1_</HTML_PREFIX>
+				<ID>1</ID>
+				<NODE_SUFFIX>_1</NODE_SUFFIX>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_AS3X_Template">
+				<HTML_PREFIX>AS3X_2_</HTML_PREFIX>
+				<NODE_SUFFIX>_2</NODE_SUFFIX>
+				<ID>2</ID>
+			</UseTemplate>		
+		</Component>
+		<Component ID="AS430"> 
+			<UseTemplate Name="ASOBO_AS430_Template">
+				<POTENTIOMETER>1</POTENTIOMETER>
+				<FAILURE>(A:CIRCUIT ON:37, Bool)</FAILURE>
+				<CIRCUIT_ID>37</CIRCUIT_ID>
+			</UseTemplate>
+		</Component>
+		<Component ID="AS330">
+			<UseTemplate Name="ASOBO_AS330_Template">
+				<FAILURE>(A:CIRCUIT AVIONICS ON, Bool)</FAILURE>
+			</UseTemplate>
+		</Component>
+		
+		<!-- AUDIO ####################################-->
+		<Component ID="AUDIO">
+			<DefaultTemplateParameters>
+				<SUFFIX_ID></SUFFIX_ID>
+			</DefaultTemplateParameters>
+			<!-- <UseTemplate Name="ASOBO_AudioPanel_Minimal_Template"> -->
+			<!-- </UseTemplate> -->
+			<UseTemplate Name="ASOBO_AudioPanel_Switch_Intercom_Template">
+				<POS_ALL>0</POS_ALL>
+				<POS_ISO>1</POS_ISO>
+				<POS_CREW>2</POS_CREW>
+				<SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_AudioPanel_Knob_Volume_Template">
+				<ID>1</ID>
+				<NODE_ID>AudioPanel_Knob_Volume_ICS</NODE_ID>
+				<ANIM_NAME>AudioPanel_Knob_Volume_ICS</ANIM_NAME>
+				<ANIMTIP_0>TT:COCKPIT.TOOLTIPS.NAVCOM_COM_VOLUME_DECREASE</ANIMTIP_0>
+				<ANIMTIP_1>TT:COCKPIT.TOOLTIPS.NAVCOM_COM_VOLUME_INCREASE</ANIMTIP_1>
+			</UseTemplate>
+			<Component ID="Fake_Audio">
+				<DefaultTemplateParameters>
+					<COPILOT>True</COPILOT>
+				</DefaultTemplateParameters>
+				<UseTemplate Name="ASOBO_AudioPanel_Knob_Volume_Template">
+					<ID>2</ID>
+					<NODE_ID>AudioPanel_Knob_Volume_Voice_1</NODE_ID>
+					<ANIM_NAME>AudioPanel_Knob_Volume_Voice_1</ANIM_NAME>
+					<ANIMTIP_0>TT:COCKPIT.TOOLTIPS.NAVCOM_CREW_VOLUME_DECREASE</ANIMTIP_0>
+					<ANIMTIP_1>TT:COCKPIT.TOOLTIPS.NAVCOM_CREW_VOLUME_INCREASE</ANIMTIP_1>
+				</UseTemplate>
+				<UseTemplate Name="ASOBO_AudioPanel_Knob_Volume_Template">
+					<ID>3</ID>
+					<NODE_ID>AudioPanel_Knob_Volume_Voice_2</NODE_ID>
+					<ANIM_NAME>AudioPanel_Knob_Volume_Voice_2</ANIM_NAME>
+					<ANIMTIP_0>TT:COCKPIT.TOOLTIPS.NAVCOM_PAX_VOLUME_DECREASE</ANIMTIP_0>
+					<ANIMTIP_1>TT:COCKPIT.TOOLTIPS.NAVCOM_PAX_VOLUME_INCREASE</ANIMTIP_1>
+				</UseTemplate>
+				<UseTemplate Name="ASOBO_AudioPanel_Knob_Volume_Template">
+					<ID>4</ID>
+					<NODE_ID>AudioPanel_Knob_Volume_Music</NODE_ID>
+					<ANIM_NAME>AudioPanel_Knob_Volume_Music</ANIM_NAME>
+					<ANIMTIP_0>TT:COCKPIT.TOOLTIPS.NAVCOM_MUSIC_VOLUME_DECREASE</ANIMTIP_0>
+					<ANIMTIP_1>TT:COCKPIT.TOOLTIPS.NAVCOM_MUSIC_VOLUME_INCREASE</ANIMTIP_1>
+				</UseTemplate>
+			</Component>
+		</Component>
+		
+		<!-- SAFETY ###################################-->
+		<Component ID="SAFETY">
+			<UseTemplate Name="ASOBO_SAFETY_Switch_ELT_Template">
+				<EMISSIVE_NODE_ID>SAFETY_Switch_ELT_Active</EMISSIVE_NODE_ID>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_SAFETY_Indicator_LowVolt_Template">
+			</UseTemplate>
+		</Component>
+		
+		<Component ID="TT_INOP">
+			<UseTemplate Name="ASOBO_GT_Interaction_Tooltip">
+				<NODE_ID>HANDLING_Switch_RudderPedals_1</NODE_ID>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_GT_Interaction_Tooltip">
+				<NODE_ID>HANDLING_Switch_RudderPedals_2</NODE_ID>
+			</UseTemplate>
+			
+			<UseTemplate Name="ASOBO_GT_Interaction_Tooltip">
+				<NODE_ID>ENGINE_MONITOR_Knob_Select</NODE_ID>
+				<CONTAINER_COUNT>1</CONTAINER_COUNT>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_GT_Interaction_Tooltip">
+				<NODE_ID>ENGINE_MONITOR_Push_Exit</NODE_ID>
+				<CONTAINER_COUNT>1</CONTAINER_COUNT>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_GT_Interaction_Tooltip">
+				<NODE_ID>ENGINE_MONITOR_Push_Menu</NODE_ID>
+				<CONTAINER_COUNT>1</CONTAINER_COUNT>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_GT_Interaction_Tooltip">
+				<NODE_ID>ENGINE_MONITOR_Push_Screen</NODE_ID>
+				<CONTAINER_COUNT>1</CONTAINER_COUNT>
+			</UseTemplate>
+			
+		</Component>
+	</Behaviors>
+</ModelInfo>
